@@ -1,0 +1,38 @@
+.container{
+    background-color: #222;
+    display: flex;
+}
+
+.imageContain{
+    flex: 1;
+    width: 100%;
+}
+
+.footerImage{
+    object-fit: cover;
+}
+
+.item{
+    display: flex;
+    flex: 1;
+    padding: 50px;
+    justify-content: space-between;
+}
+.card{
+    flex: 1;
+    padding: 0 20px;
+
+}
+
+.title{
+    font-size: 18px;
+    color: #b7903c;
+}
+
+.text{
+    color: lightgray;
+}
+
+.motto{
+    color: rgb(189, 186, 186);
+}

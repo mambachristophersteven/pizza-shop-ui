@@ -1,0 +1,36 @@
+.container{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    margin: 0px 10px 10px 10px;
+    gap: 5px;
+    cursor: pointer;
+    background-color: #dbd9d944;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    text-align: center;
+}
+
+.container:hover{
+    background-color: #bbbbbb49;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #d1411e;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.desc{
+    color: #777;
+    text-align: center;
+}
