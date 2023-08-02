@@ -9,6 +9,26 @@ const ProductSchema = new mongoose.Schema({
     desc: {
         type: String,
         required: true,
-        maxlength: 60,
+        maxlength: 260,
     },
-})
+    img: {
+        type: String,
+        required: true,
+    },
+    prices: {
+        type: [Number],
+        required: true,
+    },
+    extraIngredients: {
+        type: [
+            {
+                text:{type: String, required: true},
+                price:{type: Number, required: true},
+            }
+        ],
+        required: true,
+    },
+},{timestamps: true},
+)
+
+export default mongoose.models.Product || mongoose.model("Product", ProductSchema);
